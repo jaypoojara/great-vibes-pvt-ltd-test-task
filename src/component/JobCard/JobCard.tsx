@@ -1,4 +1,3 @@
-import React, { ReactNode } from 'react'
 import StyledButton, { BtnType } from '../StyledButton/StyledButton';
 import NetLogo from '../../assets/images/NetLogo.svg';
 import { JobList } from '../../container/CreateJobContainer/CreateJobContainer';
