@@ -118,40 +118,40 @@ export default function CreateJobContainer() {
     const handleApply = () => { }
 
     const renderStepperForm = () => {
-        if(currentStep === 1) {
+        if (currentStep === 1) {
             return (
                 <>
-                        <FormInput label='Job title' placeholder='ex. UX UI Designer' />
-                        <FormInput label='Company name' placeholder='ex. Google' />
-                        <FormInput label='Industry' placeholder='ex. Information Technology' />
-                        <div className='flex justify-between gap-6'>
-                            <FormInput label='Location' placeholder='ex. Chennai' />
-                            <FormInput label='Remote type' placeholder='ex. In-office' />
-                        </div>
-                    </>
+                    <FormInput label='Job title' placeholder='ex. UX UI Designer' />
+                    <FormInput label='Company name' placeholder='ex. Google' />
+                    <FormInput label='Industry' placeholder='ex. Information Technology' />
+                    <div className='flex justify-between gap-6'>
+                        <FormInput label='Location' placeholder='ex. Chennai' />
+                        <FormInput label='Remote type' placeholder='ex. In-office' />
+                    </div>
+                </>
             )
         }
         return (
             <>
-                        <div className='flex items-end justify-between gap-6'>
-                            <FormInput label='Experience' placeholder='Minimum' />
-                            <FormInput placeholder='Maximum' />
-                        </div>
-                        <div className='flex items-end justify-between gap-6'>
-                            <FormInput label='Salary' placeholder='Minimum' />
-                            <FormInput placeholder='Maximum' />
-                        </div>
-                        <FormInput label='Total employee' placeholder='ex. 100' />
-                        <RadioGroup
-                            title={'Apply Type'}
-                            onChange={(detail) => setValue(detail)}
-                            value={value}
-                            items={[
-                                { label: "Quick apply", value: "Quick apply" },
-                                { label: "External apply", value: "External apply" }
-                            ]}
-                        />
-                    </>
+                <div className='flex items-end justify-between gap-6'>
+                    <FormInput label='Experience' placeholder='Minimum' />
+                    <FormInput placeholder='Maximum' />
+                </div>
+                <div className='flex items-end justify-between gap-6'>
+                    <FormInput label='Salary' placeholder='Minimum' />
+                    <FormInput placeholder='Maximum' />
+                </div>
+                <FormInput label='Total employee' placeholder='ex. 100' />
+                <RadioGroup
+                    title={'Apply Type'}
+                    onChange={(detail) => setValue(detail)}
+                    value={value}
+                    items={[
+                        { label: "Quick apply", value: "Quick apply" },
+                        { label: "External apply", value: "External apply" }
+                    ]}
+                />
+            </>
         )
     }
 

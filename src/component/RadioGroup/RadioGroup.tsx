@@ -22,7 +22,7 @@ function RadioGroup(props: Props) {
                     items.map((item, index) => (
                         <div key={index} className='flex items-center gap-1'>
                             <input id={`${index}`} type='radio' className='cursor-pointer' checked={item?.value === value} onChange={() => onChange(item?.value)} />
-                            <label className=' text-placeHolder' htmlFor={`${index}`}>{item?.label}</label>
+                            <label className='text-placeHolder' htmlFor={`${index}`}>{item?.label}</label>
                         </div>
                     ))
                 }
